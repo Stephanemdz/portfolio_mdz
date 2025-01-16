@@ -5,15 +5,21 @@ body{
 .navbar a{
     text-align: start;
     margin-right: 60px;
+    color: white;
 }
 .navbar nav{
     text-align: end; 
     /* margin-right: 60px; */
-    background-color: #D9D9D9;
+    background-color: black;
 }
-.accueil ul {
+.navbar h3{
+    color: white;
+    float: left;
+    margin-left: 80px;
+}
+.contact ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .accueil ul li{
 margin-right: 50px;
@@ -22,13 +28,18 @@ margin-right: 50px;
     margin:  10px;
     width: 60%;
 }
-/* .accueileft{
-    float: left;
-}
-.imgme{
-    float: right;
-} */
-
 footer{
-    background-color: #D9D9D9;
+    background-color: none;
+}
+.itic {
+    background-color: none;
+}
+.univ-lille{
+    background-color: none;
+}
+.CL{
+    background-color: none;
+}
+.interet ul{
+    display: flex;
 }
