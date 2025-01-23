@@ -7,16 +7,6 @@ body{
     margin-right: 60px;
     color: white;
 }
-.navbar nav{
-    text-align: end; 
-    /* margin-right: 60px; */
-    background-color: black;
-}
-.navbar h3{
-    color: white;
-    float: left;
-    margin-left: 80px;
-}
 .contact ul {
     display: flex;
     justify-content: space-around;
@@ -28,18 +18,13 @@ margin-right: 50px;
     margin:  10px;
     width: 60%;
 }
-footer{
-    background-color: none;
+button {
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
 }
-.itic {
-    background-color: none;
-}
-.univ-lille{
-    background-color: none;
-}
-.CL{
-    background-color: none;
-}
-.interet ul{
-    display: flex;
+a{
+    text-decoration: none;  
 }

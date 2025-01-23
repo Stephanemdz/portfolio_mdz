@@ -36,7 +36,6 @@ html {
   a {
     color: black;
     text-decoration: none;  
-    
   }
   * {
     box-sizing: border-box;
@@ -46,16 +45,8 @@ html {
     vertical-align: middle;
     object-fit: cover;
   }
-    button {
-    border:0 ;
-}
     input {
     border:0 ;
     width: 30%;
   }
-  button {
-    background: none;
-    color: #fff;
-    font-size: inherit;
-    text-align: center;
-  }
+  
