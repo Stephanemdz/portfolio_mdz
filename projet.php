@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO MDZ</title>
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="./ASSET/algorithme.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">MODZINU Stéphane</a>
-            <a href="index.html">Accueil</a>
-            <a href="projet.html">Projet</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <?php
+    include_once __DIR__. '/template/header.inc.php';
+    ?>
     <section class="Projet">
             <h2>
                 Mes Projets
@@ -56,8 +51,8 @@
             <li><img src="/FAVICON/YOUTUBE.png" alt="youtube"><br>youtube</li>
         </ul>
     </section>
-    <footer>
-        copyright - 2024 - MODZINU Kofi Stéphane
-    </footer>
+    <?php
+    include_once __DIR__. '/template/footer.inc.php';
+    ?>
 </body>
 </html>
