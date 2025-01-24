@@ -28,3 +28,6 @@ button {
 a{
     text-decoration: none;  
 }
+nav a{
+    margin: 10rem;
+}
