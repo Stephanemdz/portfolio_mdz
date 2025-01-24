@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary-color: #fafafa;
+    --secondary-color: #808080;
+    --chill-color: #D9D9D9;
+  }
+html{
+    font-size: 62.5%; /* 16px * 62.5 = 10.00 */
+}
+body {
+    font: 1.6rem "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+  }
+img {
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+input {
+    border:0 ;
+    width: 30%;
+  }
+.navbar a{
+    text-align: start;
+    margin-right: 60px;
+    color: white;
+}
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+}
+.accueil ul li{
+margin-right: 50px;
+}
+.imgme img{
+    margin:  10px;
+    width: 60%;
+}
+button {
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: inherit;
+    text-align: center;
+}
+a{
+    text-decoration: none;  
+}
