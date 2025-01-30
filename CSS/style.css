@@ -76,14 +76,13 @@ header .header-left .links a span {
   top: -5px;
   right: -28px;
 }
-header .header-right {
+/* header .header-right {
   flex: 5;
 }
 header .header-right img {
   width: 100%;
   border-radius: 50%;
-}
-
+} */
 .about {
   margin-top: 150px;
 }
