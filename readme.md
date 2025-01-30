@@ -1,5 +1,4 @@
-# Je m'appelle MODZINU kofi Stéphane.
-## Mon portfolio
+# Portfolio
 
 Etudiant en BTS Services Informatiques aux Organisations (SIO) option 
 Solutions Logicielles et Applications Métiers (SLAM) à l'ITIC Paris, je suis entrain de me developper dans le monde du developpement web. 
