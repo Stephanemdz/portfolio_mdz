@@ -121,7 +121,7 @@ footer p {
 
 @media screen and (max-width: 621px) {
   header {
-    flex-direction: column-reverse
+    flex-direction: column;
   }
   header .header-left {
     margin-right: 0;
@@ -136,4 +136,13 @@ footer p {
   .images .image-card .image-left img {
     width: 100%;
   }
+}
+@media screen and (orientation: landscape) {
+nav{
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+  
 }
