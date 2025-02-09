@@ -20,7 +20,7 @@
         <span class="material-symbols-outlined">
           magic_button
         </span>
-        <a href="index.html">MODZINU Stéphane</a>
+        <a href="index.html">Developpeur Web</a>
       </h1>
       <ul>
         <li>
@@ -153,5 +153,25 @@
       </h3>
       <p>&copy; Stéphane MODZINU - 2025</p>
     </footer>
+    <div id="texte1">Premier texte</div>
+    <div id="texte2">Deuxième texte</div>
+    <script>
+        const texte1 = document.getElementById('texte1');
+        const texte2 = document.getElementById('texte2');
+
+        function afficherTexte(texte) {
+            texte.classList.remove('hidden');
+            setTimeout(() => {
+                texte.classList.add('hidden');
+            }, 2000); // Le texte reste visible pendant 2 secondes
+        }
+
+        setInterval(() => {
+            afficherTexte(texte1);
+            setTimeout(() => {
+                afficherTexte(texte2);
+            }, 2000);
+        }, 4000); // Le cycle complet dure 4 secondes
+    </script>
   </body>
 </html>
