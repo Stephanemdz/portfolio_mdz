@@ -111,6 +111,17 @@ footer {
 footer p {
   font-size: 15px;
 }
+.langage{
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+.java img{
+  width: 100%;
+}
+
 
 @media screen and (max-width: 880px) {
   .images .image-card {
