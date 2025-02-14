@@ -42,13 +42,13 @@
           <br>
           Dans un premier temps j'ai eu a créer un arbre heuristique me permettant de voir comment j'allais structurer
           cette application. <br><br>
-          <Strong>Voici mon l'arbre heuristique de cette application : </Strong> <br><br>
+          <Strong>Voici mon l'arbre heuristique de cette application : </Strong> <em>cliquez <a href="https://github.com/Stephanemdz/personnel/commit/c744f96f445e382ff2975360753f76f68c707232" target="_blank"><strong>ici</strong></a> pour acceder au lien du commit.</em><br><br>
         </p>
         <img src="asset/arbre_heuristique.png" alt="arbre_heuristique">
         <p>
           Ensuite j'ai construit un <strong>Modèle Conceptuel de Données</strong> pour l'application. 
           <br><br>
-          <strong>La voici : </strong>
+          <strong>La voici : </strong> <em>cliquez <strong><a href="https://github.com/Stephanemdz/personnel/blob/master/MCD%20JAVA.jpg" target="_blank">ici</a></strong> pour accedez au lien du commit</em>
         </p>
         <img src="asset/mcd_java.png" alt="mcd_java">
         <p>
@@ -56,6 +56,52 @@
           Pour ce projet, j'ai créer un dépôt <strong>GITHUB</strong> où on push le projet. <br>
           <em>Lien <strong>GITHUB</strong> du projet</em> : <a href="https://github.com/Stephanemdz/personnel" target="_blank">https://github.com/Stephanemdz/personnel</a>
 
+        </p>
+        <p>
+          <br>
+          <br>
+          J'ai eu à créer une <strong>DATABASE</strong> puis créer une table pour les tables dont a besoin pour le projet
+          <br>
+          <pre><code class="language-MySql">
+    CREATE TABLE ligue (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255) NOT NULL, 
+    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
+    date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    date_suppression DATETIME,
+    employe_id INT(11),
+    FOREIGN KEY (employe_id) REFERENCES compte_employe(id) 
+    );
+
+    CREATE TABLE compte_employe (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    admin_ligue BOOLEAN,
+    nom VARCHAR(255),
+    prenom VARCHAR(255),
+    email VARCHAR(500),
+    password CHAR(64),
+    admin_ligue BOOLEAN DEFAULT FALSE, 
+    nom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL,
+    email VARCHAR(250) UNIQUE NOT NULL, 
+    password CHAR(64) NOT NULL, 
+    date_arrive DATE,
+    date_depart DATE
+    );
+
+    CREATE TABLE ligue(
+    id_ligue INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255)
+    date_depart DATE,
+    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
+    date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    date_suppression DATETIME,
+    ligue_id INT(11),
+    FOREIGN KEY (ligue_id) REFERENCES ligue(id)
+    );
+            </code></pre>
+            <br>
+            <em>Cliquez <a href="https://github.com/Stephanemdz/personnel/commit/984d828f818ddf9968e9de9763aae37d397a6be7" target="_blank"><strong>ici</strong></a> pour acceder au lien du commit</em>
         </p>
       </section>
     </main>
