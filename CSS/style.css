@@ -122,6 +122,9 @@ footer p {
 .java img{
   width: 100%;
 }
+.imgapp img{
+  width: 30%;
+}
 
 
 @media screen and (max-width: 880px) {
