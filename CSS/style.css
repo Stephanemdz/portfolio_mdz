@@ -130,6 +130,7 @@ footer p {
 .imgapp img{
   width: 100%;
   transition: transform 0.5s ease-in-out;
+  margin-bottom: 40px;
 }
 .imgapp:hover{
   transform: scale(1.1);
@@ -154,6 +155,14 @@ h4{
 }
 .menu ul{
   text-decoration: underline 2px;
+}
+.see_more{
+  text-align: end;
+  text-decoration:underline;
+}
+.project_title{
+  text-align: center;
+  text-decoration: solid;
 }
 
 @media screen and (max-width: 880px) {
