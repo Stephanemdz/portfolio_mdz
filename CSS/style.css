@@ -187,6 +187,12 @@ h4{
   padding: 0;
   margin: 0;  
 }
+.montblanc{
+  img{
+    width: 100%;
+    border-radius: 1.5%;
+  }
+}
 
 @media screen and (max-width: 880px) {
   .images .image-card {
