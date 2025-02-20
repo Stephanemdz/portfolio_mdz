@@ -3,6 +3,7 @@
 :root {
   --background-color: #efe7e5;
   --text-color: black;
+  --contrast-color:#dbe0df;
 }
 
 body {
@@ -14,6 +15,9 @@ body {
 a{
   text-decoration: none;
   color: black;
+}
+.menu h1{
+  background-color: var(--contrast-color);
 }
 p {
   line-height: 25px;
