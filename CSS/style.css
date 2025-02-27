@@ -194,6 +194,20 @@ h4{
     border-radius: 1.5%;
   }
 }
+.experience {
+  margin-top: 60px;
+}
+.experience .image-card {
+  display:flex;
+  align-items:center;
+  margin-bottom: 60px;
+}
+.experience .image-card .image-left {
+  margin-right: 200px;
+}
+.experience .image-card .image-left img {
+  width: 250px;
+}
 
 @media screen and (max-width: 880px) {
   .images .image-card {
