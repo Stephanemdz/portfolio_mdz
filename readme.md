@@ -1,4 +1,4 @@
-# Portfolio de Stéphane Modzinu
+# Portfolio de Stéphane MODZINU
 
 Bienvenue sur le dépôt GitHub de mon portfolio personnel ! Ce projet a été réalisé pour présenter mes compétences en développement web et mes différents projets.
 
