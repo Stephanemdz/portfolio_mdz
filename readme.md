@@ -20,7 +20,7 @@ Je suis Stéphane Modzinu, un étudiant passionné par le développement web. Mo
 
 * **Projet Java App :** Création d'une application Java pour la gestion des ligues et des employés de la Maison des Ligues.
 * **M2L Ligue projet avec Laravel :** Développement d'une application de type "to-do list" pour M2L en utilisant le framework Laravel.
-* Vous pouvez consulter l'ensemble de mes projets [ici](projet.html).
+* Vous pouvez consulter l'ensemble de mes projets [ici](https://stephanemdz.github.io/portfolio_mdz/projet.html).
 
 ## Études
 
