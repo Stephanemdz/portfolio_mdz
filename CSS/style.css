@@ -208,6 +208,9 @@ h4{
 .experience .image-card .image-left img {
   width: 250px;
 }
+.langImg img{
+  width: 50px;
+}
 
 @media screen and (max-width: 880px) {
   .images .image-card {
