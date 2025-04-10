@@ -152,14 +152,14 @@ footer p {
 }
 h4{
   text-align: center;
-  text-decoration: underline 2px;
+  /* text-decoration: underline 2px; */
 }
 /* .menu ul{
   text-decoration: underline 2px;
 } */
 .see_more{
   text-align: end;
-  text-decoration:underline;
+  /* text-decoration:underline; */
 }
 .project_title{
   text-align: center;
