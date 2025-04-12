@@ -5,7 +5,9 @@
   --text-color: black;
   --contrast-color:#dbe0df;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 3% 15%;
   font-family: "Roboto", sans-serif;
