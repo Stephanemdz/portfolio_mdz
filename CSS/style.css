@@ -219,6 +219,9 @@ h4{
 .langImg img{
   width: 50px;
 }
+.acceuil-text{
+  text-align: center;
+}
 
 @media screen and (max-width: 880px) {
   .images .image-card {
