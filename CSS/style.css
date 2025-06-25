@@ -136,11 +136,11 @@ footer p {
 }
 .imgapp img{
   width: 100%;
-  transition: transform 0.5s ease-in-out;
+  /* transition: transform 0.5s ease-in-out; */
   margin-bottom: 40px;
 }
 .imgapp:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 .education {
   margin-top: 60px;
@@ -249,7 +249,5 @@ h4{
 nav{
   justify-content: space-between;
   flex-direction: row;
-}
-
-  
+} 
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="shortcut icon" href="favicon/logoportfolio3.png" type="image/x-icon">
     </head>
-</head>
 <body>
     <header>
         <nav class="menu">
@@ -52,49 +50,42 @@
           <br><br>
           <strong>La voici : </strong> 
         </p>
-        <img src="asset/mcd_java.png" alt="mcd_java">
+        <img src="asset/javamcd.jpg" alt="mcd_java">
         <p>
           <br>
           <br>
           J'ai eu à créer une <strong>DATABASE</strong> puis créer les tables dont a besoin pour le projet.
           <br>
           <pre><code class="language-MySql">
-    CREATE TABLE ligue (
-    id INT(11) PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255) NOT NULL, 
-    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
-    date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    date_suppression DATETIME,
-    employe_id INT(11),
-    FOREIGN KEY (employe_id) REFERENCES compte_employe(id) 
-    );
+              CREATE TABLE ligue (
+              id INT(11) PRIMARY KEY AUTO_INCREMENT,
+              nom VARCHAR(255) NOT NULL,
+              date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
+              date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+              date_suppression DATETIME,
+              admin_ligue INT(11)
+              );
 
-    CREATE TABLE compte_employe (
-    id INT(11) PRIMARY KEY AUTO_INCREMENT,
-    admin_ligue BOOLEAN,
-    nom VARCHAR(255),
-    prenom VARCHAR(255),
-    email VARCHAR(500),
-    password CHAR(64),
-    admin_ligue BOOLEAN DEFAULT FALSE, 
-    nom VARCHAR(255) NOT NULL,
-    prenom VARCHAR(255) NOT NULL,
-    email VARCHAR(250) UNIQUE NOT NULL, 
-    password CHAR(64) NOT NULL, 
-    date_arrive DATE,
-    date_depart DATE
-    );
+              CREATE TABLE compte_employe (
+              id INT(11) PRIMARY KEY AUTO_INCREMENT,
+              admin_ligue BOOLEAN DEFAULT FALSE,
+              nom VARCHAR(255) NOT NULL,
+              prenom VARCHAR(255),
+              email VARCHAR(250) UNIQUE,
+              password CHAR(64) NOT NULL,
+              dateArrivee DATE,
+              dateDepart DATE,
+              date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
+              date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+              date_suppression DATETIME,
+              ligue_id INT(11),
+              FOREIGN KEY (ligue_id) REFERENCES ligue(id)
+              );
 
-    CREATE TABLE ligue(
-    id_ligue INT(11) PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255)
-    date_depart DATE,
-    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
-    date_modification DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    date_suppression DATETIME,
-    ligue_id INT(11),
-    FOREIGN KEY (ligue_id) REFERENCES ligue(id)
-    );
+
+              ALTER TABLE ligue
+              ADD CONSTRAINT FK_admin_ligue
+              FOREIGN KEY (admin_ligue) REFERENCES compte_employe(id);
             </code></pre>
             <br>
         </p>
@@ -108,6 +99,16 @@
             Comme on peut le voir on doit écrire notre mot de passe pour accéder à l'application, puis cela nous renvoi à la page d'accueil où nous avons la possibilité de gérer le compte <strong>root</strong> de l'application, gérer les <strong>ligues</strong> 
             ou nous avons aussi la possibilité de <strong>quitter</strong>.
           </p>
+
+          <div class="interfaceGraphique">
+            <br><br>
+            <h4>Voici l'interface graphique de l'application, elle est simple et épurée, ce qui permet une navigation fluide et intuitive.</h4>
+              <br>
+            <p>
+              J'ai utilisé le langage de programmation <strong>JAVA</strong> pour développer cette application, en mettant en œuvre des concepts tels que la programmation orientée objet et la gestion des bases de données.
+            </p>
+            <img src="asset/interface_Graphique_Java.png" alt="interface_graphique">
+          </div>
       </section>
     </main>
     <footer>
