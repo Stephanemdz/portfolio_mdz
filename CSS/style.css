@@ -54,10 +54,8 @@ nav li span {
 }
 
 header {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
+  margin-bottom: 60px;
+  
 }
 header .header-left {
   flex: 6;
@@ -159,7 +157,7 @@ footer p {
   width: 30%;
 }
 h4{
-  text-align: center;
+  text-align: start;
   /* text-decoration: underline 2px; */
 }
 /* .menu ul{
